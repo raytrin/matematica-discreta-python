@@ -1,5 +1,5 @@
 def treinar_negacao():
-    """O usuário digita uma proposição e sua negativa. O programa corrige."""
+    """O usuário digita uma proposição e sua negação. O programa verifica se a resposta está correta."""
 
     negacao = {
         "p": "¬p",
@@ -15,27 +15,28 @@ def treinar_negacao():
         proposicao = input("\nProposição (ex: p -> q): ").strip().lower().replace(" ", "")
         negacao_proposicao = input("Digite a negação: ").strip().lower().replace(" ", "")    
 
-        if proposicao in negacao.keys():
+        if proposicao in negacao:
             if negacao[proposicao] == negacao_proposicao:
-                print("Acertou! Parabéns! 🎉")
-                break    
+                print("\nAcertou! Parabéns! 🎉")
+                   
                     
             else:
                 print("\nErrou! Tente novamente. 😊")
-                print(f"Resposta correta: {negacao_proposicao}")
+                print(f"Resposta correta: {negacao[proposicao]}")  
 
-                while True:
-                    print("\n1 - tentar novamente")
-                    print("2 - ver a resposta")
-                    resposta = input("Digite uma das opções acima: ")
 
-                    if resposta == "2":
-                        print(f"\nA resposta correta é: {negacao[proposicao]}")
-                        break
-                    if resposta == "1":
-                        break
+            while True:
+                print("\n1 - tentar novamente")
+                print("2 - sair")
+                resposta = input("Digite uma das opções acima: ")
 
-                continue
+                if resposta == "1":
+                    break
+                elif resposta == "2":
+                    return
+                else:
+                    print("Opção inválida.")
+                
         else:
             print("Digite uma proposição válida!")
 
@@ -115,7 +116,7 @@ def quiz():
         resp_equivalencia = input(f"\nDigite a equivalência lógica de {equiv_aleatoria}: \n").strip().lower() 
 
         if resp_equivalencia.replace(" ", "") == equivalencia[equiv_aleatoria].replace(" ", ""):
-            print("Acertou! Parabéns! 🎉")
+            print("\nAcertou! Parabéns! 🎉")
             pontuacao += 1
         else:
             print("\nErrou! Tente novamente. 😊")
@@ -143,7 +144,7 @@ def quiz():
 
         opcao = input("\nContinuar jogando (s/n): ").lower() 
         if opcao == "n":
-            print(f"Você fez {pontuacao} pontos!")
+            print(f"\nVocê fez {pontuacao} pontos!")
             break
         if opcao == "s":
             continue 
