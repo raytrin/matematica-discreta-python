@@ -8,6 +8,7 @@ def treinar_negacao():
         "p^q": "¬pv¬q",
         "pvq": "¬p∧¬q",
         "p->q": "p∧¬q",
+        "p->q": "p^¬q",
         "p<->q": "(p∧¬q) v (¬pvq)"
     }
 
@@ -35,7 +36,7 @@ def treinar_negacao():
                 elif resposta == "2":
                     return
                 else:
-                    print("Opção inválida.")
+                    print("Selecione uma opção válida!")
                 
         else:
             print("Digite uma proposição válida!")
@@ -91,6 +92,7 @@ def quiz():
     "¬p": "p",
     "p ∧ q": "¬pv¬q",
     "p v q": "¬p∧¬q",
+    "p v q": "¬p^¬q",
     "p -> q": "p∧¬q",
     "p <-> q": "(p∧¬q)v(¬pvq)"
     }
@@ -134,6 +136,7 @@ def quiz():
 
 
         resp_conectivo = input(f"\nDigite o conectivo correspondente do símbolo '{conectivo_aleatorio}': \n")
+
         if resp_conectivo.replace(" ", "") == nome_conectivo[conectivo_aleatorio].replace(" ", ""):
             print("Acertou! Parabéns! 🎉")
             pontuacao += 1
@@ -141,13 +144,16 @@ def quiz():
             print("\nErrou! Tente novamente. 😊") 
             print(f"Resposta correta: {nome_conectivo[conectivo_aleatorio]}")
 
-
-        opcao = input("\nContinuar jogando (s/n): ").lower() 
-        if opcao == "n":
-            print(f"\nVocê fez {pontuacao} pontos!")
-            break
-        if opcao == "s":
-            continue 
+        while True:
+            opcao = input("\nContinuar jogando (s/n): ").lower() 
+            if opcao == "n":
+                print(f"\nVocê fez {pontuacao} pontos!")
+                return
+            elif opcao == "s":
+                break
+            else:
+                print("Digite uma opção válida!")
+                continue
 
 
 def tabela_verdade():
