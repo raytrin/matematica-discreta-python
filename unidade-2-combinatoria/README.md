@@ -37,11 +37,12 @@ python calculadora_permutacoes.py
 ---
 ## 📚 Conceitos matemáticos aplicados:
 
-**Fatorial**: n! = n × (n-1) × ... × 2 × 1
-**Permutação simples**: Arranjos de n elementos distintos
-**Permutação circular**: Arranjos em formato circular
-**Permutação com repetição**: Arranjos considerando elementos idênticos
----
+1. **Fatorial**: n! = n × (n-1) × ... × 2 × 1
+2. **Permutação simples**: Arranjos de n elementos distintos
+3. **Permutação circular**: Arranjos em formato circular
+4. **Permutação com repetição**: Arranjos considerando elementos idênticos
+
+
 ## 📬 Contato
 Se quiser trocar uma ideia sobre matemática ou programação, sinta-se à vontade.
 
