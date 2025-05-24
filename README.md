@@ -4,10 +4,12 @@ Este respositório é uma coleção de projetos e exercícios feitos para acompa
 A ideia é transformar os principais tópicos teóricos em pequenos programas para entender e praticar os assuntos da matéria.
 
 ## Estrutura
-- [unidade-1-logica-de-argumentacao](./unidade-1-logica-de-argumentacao): programas para lógica proposicional.
-- Outras unidade serão adicionadas conforme o conteúdo da disciplina avança.
+- [unidade-1-logica-de-argumentacao](./unidade-1-logica-de-argumentacao): programa para praticar lógica proposicional.
+- [unidade-2-combinatoria](./unidade-2-combinatoria): programa para praticar combinatória básica.
+
+- Outras unidades serão adicionadas conforme o conteúdo da disciplina avança.
 
 ## Objetivo
-Reforçar o aprendizado.
+Reforçar o aprendizado em Matemática Discreta e Python.
 
 ---
