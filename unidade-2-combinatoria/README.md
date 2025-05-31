@@ -1,8 +1,10 @@
+# Sobre:
+
+Estes são os meus projetos da segunda e terceira semana - **Análise Combinatória I e II**. Além de aprender a teoria matemática, estou praticando Python e melhorando minha organização de código! 🐍
+
 # 🧮 Calculadora de Permutações
-
-Este é meu projeto da segunda semana - **Análise Combinatória**. Além de aprender a teoria matemática, estou praticando Python e melhorando minha organização de código! 🐍
-
 ---
+
 ##  Funcionalidades
 
 *  Calcular **fatorial** de números (n!)
@@ -10,10 +12,12 @@ Este é meu projeto da segunda semana - **Análise Combinatória**. Além de apr
 *  Calcular **permutação circular** (n-1)!
 *  Calcular **permutação com repetição** n!/(a!×b!×...)
 *  Interface de menu interativa
+
 ---
 ##  Instruções de uso
 
 ### Execução direta:
+
 ```python
 python calculadora_permutacoes.py
 
@@ -27,13 +31,31 @@ python calculadora_permutacoes.py
 4. **Permutação com repetição** - Permutação com elementos repetidos
 0. **Sair** - Encerra o programa
 ---
-##  Aprendizados desta semana:
+
+# 🧮 Calculadora de Combinações
+
+##  Funcionalidade
+
+* Calcular **Combinações simples** C(n, k) = n! / (k! * (n - k)!)
+
+---
+##  Instruções de uso
+
+### Execução direta:
+
+```python
+python calculadora_combinacoes.py
+
+```
+
+--- 
+##  Aprendizados destas semanas:
 
 1. **Melhor organização**: Agora meu programa não executa o menu automaticamente quando importado
 2. **Funções reutilizáveis**: Outras pessoas podem importar e usar minhas funções
 3. **Estrutura modular**: Separação entre lógica matemática e interface
 4. **Tratamento de erros**: Validação de entrada e mensagens de erro mais claras
-5. **Combinatória basica I**: Fatorial, Permutação simples, Permutação Circular, Permutação com Repetição
+5. **Combinatória básica I e II**: Fatorial, Permutação simples, Permutação Circular, Permutação com Repetição e Combinações simples e completas.
 ---
 ##  Conceitos matemáticos aplicados:
 
@@ -41,6 +63,12 @@ python calculadora_permutacoes.py
 2. **Permutação simples**: Arranjos de n elementos distintos
 3. **Permutação circular**: Arranjos em formato circular
 4. **Permutação com repetição**: Arranjos considerando elementos idênticos
+5. **Combinações simples**: Escolher k elementos entre n, sem ordem
+---
+##  Tecnologias
+
+- Python 3.x
+- Módulo `textwrap` para formatação
 
 
 ##  Contato
