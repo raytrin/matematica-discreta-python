@@ -18,11 +18,11 @@ def treinar_negacao():
 
         if proposicao in negacao:
             if negacao[proposicao] == negacao_proposicao:
-                print("\nAcertou! Parabéns! 🎉")
+                print("\nAcertou! Parabéns!")
                    
                     
             else:
-                print("\nErrou! Tente novamente. 😊")
+                print("\nErrou! Tente novamente.")
                 print(f"Resposta correta: {negacao[proposicao]}")  
 
 
@@ -118,30 +118,30 @@ def quiz():
         resp_equivalencia = input(f"\nDigite a equivalência lógica de {equiv_aleatoria}: \n").strip().lower() 
 
         if resp_equivalencia.replace(" ", "") == equivalencia[equiv_aleatoria].replace(" ", ""):
-            print("\nAcertou! Parabéns! 🎉")
+            print("\nAcertou! Parabéns!")
             pontuacao += 1
         else:
-            print("\nErrou! Tente novamente. 😊")
+            print("\nErrou! Tente novamente.")
             print(f"Resposta correta: {equivalencia[equiv_aleatoria]}")
 
 
         resp_negacao = input(f"\nDigite a negação da proposição {negacao_aleatoria}: \n")
         if resp_negacao.replace(" ", "") == negacao[negacao_aleatoria].replace(" ", ""): 
-            print("Acertou! Parabéns! 🎉")
+            print("Acertou! Parabéns!")
 
             pontuacao += 1
         else:
-            print("\nErrou! Tente novamente. 😊")
+            print("\nErrou! Tente novamente.")
             print(f"Resposta correta: {negacao[negacao_aleatoria]}")
 
 
         resp_conectivo = input(f"\nDigite o conectivo correspondente do símbolo '{conectivo_aleatorio}': \n")
 
         if resp_conectivo.replace(" ", "") == nome_conectivo[conectivo_aleatorio].replace(" ", ""):
-            print("Acertou! Parabéns! 🎉")
+            print("Acertou! Parabéns!")
             pontuacao += 1
         else:
-            print("\nErrou! Tente novamente. 😊") 
+            print("\nErrou! Tente novamente.") 
             print(f"Resposta correta: {nome_conectivo[conectivo_aleatorio]}")
 
         while True:
@@ -157,7 +157,42 @@ def quiz():
 
 
 def tabela_verdade():
-    pass
+    """Exibe tabela verdade de disjunção, conjunção, implicação e bicondicional """
+        
+    print("\n--------- TABELA VERDADE ---------")
+        
+    expressao = input("\nDigite a proposição (ex.: p and q): ")
+       
+    combinacoes = [(True, True), (True, False), (False, True), (False, False)]
+
+    print(f"{"\n p":<10} | {"q":^10} | {expressao:>10}")
+
+    print("-" * 38)
+    for value in combinacoes:
+        p, q = value
+        if expressao == "p and q":
+            result = p and q
+
+            print(f"{str(p):<10} | {str(q):^10} | {str(result):>10} |")
+            print("-" * 38)
+            
+        elif expressao == "p or q":
+            result = p or q
+            
+            print(f"{str(p):<10} | {str(q):^10} | {str(result):>10} |")
+            print("-" * 38)
+            
+        elif expressao == "not p or q":  
+            result = not p or q
+                 
+            print(f"{str(p):<10} | {str(q):^10} | {str(result):>10} |")
+            print("-" * 38)
+            
+        elif expressao == "p == q":  
+            result = p == q
+            print(f"{str(p):<10} | {str(q):^10} | {str(result):>10} |")
+            print("-" * 38)  
+                
 
 
 def menu():
@@ -170,7 +205,7 @@ def menu():
         print("\n1 - Treinar negação de proposições")
         print("2 - Modo programador")
         print("3 - Quiz de lógica")
-        print("4 - Gerar tabela verdade (em breve!)")
+        print("4 - Gerar tabela verdade")
         print("0 - Sair")
 
         opcao = input("\nDigite uma opção: ")
