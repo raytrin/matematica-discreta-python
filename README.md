@@ -5,7 +5,8 @@ A ideia é transformar os principais tópicos teóricos em pequenos programas pa
 
 ## Estrutura
 - [unidade-1-logica-de-argumentacao](./unidade-1-logica-de-argumentacao): programa para praticar lógica proposicional.
-- [unidade-2-combinatoria](./unidade-2-combinatoria): programa para praticar combinatória básica.
+- [unidade-2-3-combinatoria](./unidade-2-3-combinatoria): programa para praticar combinatória básica.
+- [unidade-4-5-recorrencia](./unidade-4-5-recorrencia): programa que simula o crescimento populacional 
 
 - Outras unidades serão adicionadas conforme o conteúdo da disciplina avança.
 
