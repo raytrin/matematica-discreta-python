@@ -4,9 +4,9 @@ Este repositório é uma coleção de projetos que estou fazendo para acompanhar
 
 ## Projetos
 
-- **unidade-1-logica-argumentacao**: Programa para praticar lógica proposicional
-- **unidade-2-3-combinatoria**: Calculadoras de permutações e combinações  
-- **unidade-4-5-recorrencia**: Simulação de crescimento populacional
+- [**unidade-1-logica-argumentacao**](./unidade-1-logica-de-argumentacao/README.md): Programa para praticar lógica proposicional
+- [**unidade-2-3-combinatoria**](./unidade-2-3-combinatoria/README.md): Calculadoras de permutações e combinações  
+- [**unidade-4-5-recorrencia**](./unidade-4-5-recorrencia/README.md): Simulação de crescimento populacional
 - Outras unidades virão conforme eu avanço na disciplina
 
 ## Como usar
