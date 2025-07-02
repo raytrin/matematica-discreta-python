@@ -1,0 +1,15 @@
+# Ambiente virtual
+venv/
+
+# Cache do Python
+__pycache__/
+*.py[cod]
+
+# Checkpoints do Jupyter
+.ipynb_checkpoints/
+
+# Arquivos temporários do sistema
+.DS_Store
+
+# PyCharm
+.idea/
